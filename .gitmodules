@@ -1,0 +1,6 @@
+[submodule "simulator/thirdparty/kraken"]
+	path = simulator/thirdparty/kraken
+	url = https://github.com/hANSIc99/Kraken_C_API.git
+[submodule "simulator/thirdparty/json"]
+	path = simulator/thirdparty/json
+	url = https://github.com/nlohmann/json.git
