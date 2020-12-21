@@ -1,8 +1,10 @@
-# CPPND: ACCPO - Autonomous CryptoCurrency Portfolio Optimization
+# ACCPO - Autonomous CryptoCurrency Portfolio Optimization
 
 This program is fully written in modern C++17.
 
-This is development draft of a Cryptocurrency trading bot working with the Kraken exchange API.
+This is first study of a Cryptocurrency trading bot working with the Kraken exchange API.
+
+The development started as capstone project for the Udacity C++ Nanodegree.
 
 ### Simulator program:
 The program continously and automatically polls Kraken API to retrieve data and performs operation in infinite loop until manually terminated.
