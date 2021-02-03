@@ -2,7 +2,7 @@
 
 This program is fully written in modern C++17.
 
-This is first study of a Cryptocurrency trading bot working with the Kraken exchange API.
+This is study of a Cryptocurrency trading with the Kraken exchange API.
 
 The development started as capstone project for the Udacity C++ Nanodegree.
 
@@ -11,10 +11,15 @@ The program continously and automatically polls Kraken API to retrieve data and 
 Given an initial crypto portfolio, the bot automatically adapts a strategy balancing all crypto assets (and one riskfree asset, such as EUR or USD) to equal portfolio weight.
 There is no live-trading or trading API access included, so this is really just a simulator program.
 
+### Development program:
+The program fetches the current portfolio from Kraken exchange.
+It calculates the optimal new portfolio weights on a given crypto asset strategy (and one riskfree asset, such as EUR or USD).
+It automatically executes the trades necessary to reach the new portfolio configuration.
+
 ## Structure of folders and files
 
-* `\devel\` - ACCPO development version - Including live-trading algorithm, one-time optimization
-* `\simulator\` - ACCPO simulator folder - Bot simulator, no live-trading, infinite polling loop
+* `\devel\` - ACCPO development version - Including asset trading
+* `\simulator\` - ACCPO simulator folder - Simulator, no live-trading, infinite polling loop
 * `LICENSE` - License for released ACCPO
 * `README.md`- this file
 

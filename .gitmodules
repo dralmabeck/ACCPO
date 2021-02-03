@@ -4,3 +4,9 @@
 [submodule "simulator/thirdparty/json"]
 	path = simulator/thirdparty/json
 	url = https://github.com/nlohmann/json.git
+[submodule "devel/thirdparty/kraken"]
+	path = devel/thirdparty/kraken
+	url = https://github.com/hANSIc99/Kraken_C_API.git
+[submodule "devel/thirdparty/json"]
+	path = devel/thirdparty/json
+	url = https://github.com/nlohmann/json.git
