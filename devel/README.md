@@ -45,20 +45,10 @@ Both thirdparty libraries (Kraken C API and JSON for Modern C++) need to be plac
 
 ## Options in configuration file
 
-Available options include:
+Available options in the "config.h" source code file include:
 
-* `API_KEY api_key` ### Your private key to Kraken API
-* `SEC_KEY sec_key` ### Your secure key to Kraken API
-* `RISKFREE_QUANTITY 3000` ### Initial quantity of riskfree asset
-* `STARTTIME 2020,08,31,00,00,00` ### Startdate for download of historical data
-* `INTERVAL 1440` ### Time interval between historical datapoints
-* `TRADE_FEE 0.0026` ### Fee for trading (in percent)
-* `WEIGHT_DIFF 0.02` ### Difference in portfolio weights before optimization kicks in
-* `PAUSE_API 3` ### Pause Kraken API between each call
-* `PAUSE_PROG 30` ### Pause program each iteration in infinite loop
-* `AVAILABLE_TICKERS ADAUR,ALGOEUR,ATOMEUR,BALEUR,BATEUR,BCHEUR,COMPEUR,CRVEUR,DAIEUR,DASHEUR,DOTEUR,EOSEUR,GNOEUR,ICXEUR,KAVAEUR,KNCEUR,KSMEUR,LINKEUR,LSKEUR,NANOEUR,OMGEUR,OXTEUR,PAXGEUR,QTUMEUR,SCEUR,SNXEUR,STORJEUR,TRXEUR,WAVESEUR,XDGEUR,XETCZEUR,XETHZEUR,XLTCZEUR,XMLNZEUR,XREPZEUR,XTZEUR,XXBTZEUR,XXLMZEUR,XXMRZEUR,XXRPZEUR,XZECZEUR` ### List of possible crypto assets in Kraken format
-* `ASSET_LIST XXRPZEUR,XXMRZEUR,XZECZEUR` ### Asset ticker symbols in Kraken format (length needs to match asset_quantities)
-* `ASSET_QUANTITIES 1000,5,10` ### Initial quantities of assets (length needs to match asset_list)
+This defines your list of crypt assets you want to trade:
+* `\source\config.h` - tradeableAssets{"ZEUR", "XZEC", "XREP", "XXLM", "XXMR", "DASH"}
 
 ## Structure of folders and files
 

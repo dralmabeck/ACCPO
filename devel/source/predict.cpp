@@ -27,10 +27,7 @@ auto Optimizer::predictWeights() noexcept -> const std::vector<double>
     std::vector<double> result;
 
     // All assets have 0 weight, i.e. deinvestment
-    //double equal_weight = 0.0;
-
-    // All assets are weigthed equally, i.e. fully balanced investment
-    double equal_weight = 1.0 / (static_cast<double>(P->numberAssets()) - 1.0);
+    double equal_weight = 0.0;
 
     result = std::vector<double>(P->numberAssets(), equal_weight);
 
